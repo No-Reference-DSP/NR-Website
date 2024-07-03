@@ -1,25 +1,42 @@
 import Link from 'next/link'
+import Navbar from './components/navbar'
+import Image from 'next/image'
+import MBR_DELAY_PNG from '@/public/MBR-Delay.png'
 
 function Home() {
 
   return (
-    <div>
-      <h2>This was created in the /page file</h2>
-      <Link href="/dsp">Link to DSP section</Link><br></br>
-      <Link href="/music">Link to the Music Section</Link><br></br>
-      <Link href="/contact">Link to the Contact Section</Link>
-      <p>
-        I know I want there to be 4 main sections, <br></br>
-        DSP to showcase the Plugins <br></br>
-        Music to showcase the Music and the Music Player <br></br>
-        Contact section linking to an email and a github <br></br>
-        Privary section eventually implemented if I start selling stuff <br></br>
-      </p>
-      <p>
-        This landing page can have a brief &quot;Latest&quot; section, to display the latest <br></br>
-        in DSP and Music
-      </p>
-    </div>
+      <div className="static mx-12 my-12 divide-y-2 divide-dashed divide-y">
+        <div>
+          <h1 className='font-light text-2xl align-middle'>Latest</h1>
+          <div></div>
+        </div>
+        
+        <div className="static flex justify-start pt-6 pb-10">
+          <div className='content-center max-w-500'>
+            <Link href='/plugins/mbr-delay'>
+              <Image
+                src={MBR_DELAY_PNG}
+                alt="MBR-Delay"
+                width="500"
+                height="300"
+                className="cursor-pointer"
+                priority
+              />
+            </Link>
+          </div>
+          <div className='px-8 py-4 max-w-100'>
+            <Link href='/plugins/mbr-delay'>
+              <h2 className='text-2xl font-bold hover:underline'>MBR-Delay</h2>
+            </Link>
+            <p className='text-slate-400'>Free Download</p><br></br>
+            <p>
+              Infinite. Lush. Pyschedelic.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </div>
     )
 }
 

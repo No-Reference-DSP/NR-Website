@@ -1,3 +1,8 @@
+import Navbar from './components/navbar'
+import Footer from './components/footer'
+import './globals.css'
+
+
 export const metadata = {
   title: 'No Reference Website',
   description: 'Showcase for all builds',
@@ -10,13 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div>
-        <h1>Created in /Layout</h1>
-        <p>This will be generated in each of the files throughout the app</p>
-        </div>
-      
-        {children}
+      <body className='flex flex-col min-h-screen'>
+          <Navbar/>
+          {children}
+          <Footer/>
       </body>
     </html>
   )
