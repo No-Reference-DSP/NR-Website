@@ -1,17 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import MBRComponent from '../components/mbr-delay-comp'
 
-export default function Dsp() {
+export default function Plugins() {
 
     return (
+      <div className="w-9/12 static mx-12 my-12 divide-y-2 divide-dashed divide-y">
         <div>
-            <h1>We are now in DSP</h1>
-            <Link href="/">Go back to home</Link>
-            <Link href="/plugins/mbr-delay">MBR PAGE</Link>
-            <p>The DSP section will display a quick picture, price and link to the plugin <br></br>
-                and clicking on the picture will lead the user to the individual page of the plugin <br></br>
-                that has more detail
-            </p>
+          <h1 className='font-light text-3xl align-middle'>
+            Plugins
+          </h1>
+          <p className='font-light text-s'>For your creative toolset</p>
         </div>
+        
+        <div className='flex justify-around pt-6 pb-6'>
+          <MBRComponent/>
+        </div>
+
+      </div>
+
     )
 }

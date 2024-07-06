@@ -4,7 +4,7 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'No Reference Website',
+  title: 'No Reference',
   description: 'Showcase for all builds',
 }
 
