@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import ReactHowler from 'react-howler'
-import PLACEHOLDER from '@/public/ep 1.png'
+import PLACEHOLDER from '@/public/acidjamsEP.png'
 
 function HowlerPlayer() {
   return (
@@ -17,7 +17,7 @@ function HowlerPlayer() {
                 alt="ACIDJAMSEP"
                 width="200"
                 height="200"
-                className="cursor-pointer"
+                className=""
                 priority
               />
         </Suspense>
