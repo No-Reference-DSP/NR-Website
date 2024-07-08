@@ -1,5 +1,4 @@
 import React from 'react'
-import Plugins from './page'
 
 function PluginLayout({
   children, // nested layout
