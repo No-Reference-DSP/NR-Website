@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
-import HowlerPlayer from '../components/howler-player'
+import AlbumsBox from '../ui/albumsbox'
+import EPSingleBox from '../ui/epsinglebox'
 
 function Music() {
   return (
@@ -12,7 +14,22 @@ function Music() {
         </div>
         <div></div>
 
-      </div>
+        <div id='musicProjects' className='w-[800px] py-6 px-6'>
+          <div id='titleplaceholder' className='py-2'>
+        
+          </div>
+          <div id='albums' className='p-3'>
+            <h1 className='font-light text-2xl underline underline-slate-200 pb-1'>Albums</h1>
+            <AlbumsBox/>
+          </div>
+          <div id='epSingles' className='p-3'>
+            <h1 className='font-light text-2xl underline underline-slate-200 pb-1'>EPs / Singles </h1>
+            <EPSingleBox/>
+           </div>
+      
+        </div>
+
+    </div>
   )
 }
 

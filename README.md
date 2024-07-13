@@ -26,5 +26,9 @@ The reason I'm making this website is to showcase my work, as sort of a portfoli
 inside of /client
 8. run `npm install howler` for the audio player library howler.js
 9. run `npm instasll --save react-howler` for the react wrapper of howler.js
+10. run `npm install react-icons --save`
+
+11. run `npm install --save @types/react-howler` ?? This is a maybe
+12. run `npm install --save @types/howler
 
 (I think the backend dependencies got pushed to the repo, so you might just be able to hit step 5 and step 7)

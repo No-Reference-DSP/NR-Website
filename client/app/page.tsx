@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import Navbar from './components/navbar'
+import Navbar from './ui/navbar'
 import Image from 'next/image'
 import MBR_DELAY_PNG from '@/public/MBR-Delay.png'
 
 function Home() {
-
+  
   return (
     <div className='flex justify-center'>
 
