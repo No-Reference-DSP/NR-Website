@@ -1,9 +1,10 @@
-'use client';
-
 // the following code was found at 
 // https://medium.com/@mohammadreza.tatlari8/a-simple-music-player-with-howler-and-react-74b47e892be1
 // https://github.com/Mohammadreza-Tatlari/Music-Player-Howler-React
+// Thank you to Mohammadreza Tatlari
+// I have made modification to the look at feel of the code, but overall remains unchanged
 
+'use client'
 import React, {Component, useEffect, useState} from 'react'
 import { Howler } from 'howler';
 import { CgPlayButton, CgPlayPause } from 'react-icons/cg'

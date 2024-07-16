@@ -1,12 +1,17 @@
 // the following code was found at 
 // https://medium.com/@mohammadreza.tatlari8/a-simple-music-player-with-howler-and-react-74b47e892be1
 // https://github.com/Mohammadreza-Tatlari/Music-Player-Howler-React
+// Thank you to Mohammadreza Tatlari
+// I have made modification to the look at feel of the code and data, but overall remains unchanged
+
 'use client'
 import React, {useState} from 'react'
 import Link from 'next/link'
-import AudioPlayer from '@/app/components/AudioPlayer';
+import Image from 'next/image'
+import AudioPlayer from '@/app/components/AudioPlayer'
 import Track from '@/app/components/Track';
 import { CgChevronLeft, CgPlayButtonR, CgPlayPause } from 'react-icons/cg'
+import CATHARSIS from '@/public/catharsis.png'
 
 const MusicInstances = [
   {
@@ -73,27 +78,40 @@ function CatharsisPage() {
   const [trackDetail , setTrackDetail] = useState<string>() //track information to be displayed among components
   
   return (
-    <div className='flex flex-col w-[800px] py-6 px-6'>
+    <div className='flex flex-col w-[900px] py-6 px-6'>
       <Link href='/music' className='font-light hover:border'>
         <CgChevronLeft size={42}/>
       </Link>
-      <h1 className='font-light text-2xl py-2'>Catharsis I</h1>
+      <h1 className='font-light text-2xl py-2 '>Catharsis I - No Reference</h1>
+      
+      <div className='flex justify-center'>
+        <Link href='/music/catharsis-i'>
+          <Image
+          src={CATHARSIS}
+          alt='CATHARSIS'
+          width='450'
+          height='450'
+          className="cursor-pointer m-auto p-10"
+          priority
+          />
+        </Link>
+        <ul className="space-y-1 p-2 m-2 pb-16">
+          {MusicInstances.map((track , index) =>(
+              <li key={track.id}>
+                  <Track 
+                  isPlaying={isPlaying}
+                  setIsPlaying={setIsPlaying}
+                  selectedMusic={selectedMusic}
+                  setSelectedMusic={setSelectedMusic}
+                  setTrackDetail={setTrackDetail}
+                  track={track}
+                  isFirstTrack={index === 0}                
+                  />
+              </li>
+          ))}
+        </ul>
+      </div>
 
-      <ul className="space-y-1 p-2 m-2 pb-16">
-        {MusicInstances.map((track , index) =>(
-            <li key={track.id}>
-                <Track 
-                isPlaying={isPlaying}
-                setIsPlaying={setIsPlaying}
-                selectedMusic={selectedMusic}
-                setSelectedMusic={setSelectedMusic}
-                setTrackDetail={setTrackDetail}
-                track={track}
-                isFirstTrack={index === 0}                
-                />
-            </li>
-        ))}
-      </ul>
       <AudioPlayer
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying} // check and set whether music is being played

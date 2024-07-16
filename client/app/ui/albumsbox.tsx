@@ -11,8 +11,8 @@ function AlbumsBox() {
             <Image
             src={CATHARSIS}
             alt='CATHARSIS'
-            width='125'
-            height='125'
+            width='200'
+            height='200'
             className="cursor-pointer m-auto border"
             priority
             />

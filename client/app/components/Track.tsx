@@ -1,8 +1,10 @@
-'use client'
-
 // the following code was found at 
 // https://medium.com/@mohammadreza.tatlari8/a-simple-music-player-with-howler-and-react-74b47e892be1
 // https://github.com/Mohammadreza-Tatlari/Music-Player-Howler-React
+// Thank you to Mohammadreza Tatlari
+// I have made modification to the look at feel of the code, but overall remains unchanged
+
+'use client'
 import React, {useState, useEffect} from "react"
 import {Howl} from "howler"
 import { CgPlayButtonR, CgPlayPause } from 'react-icons/cg'
@@ -49,6 +51,10 @@ export default function Track({
         setMusic(newMusic)
         if(isFirstTrack)
             setSelectedMusic(newMusic)
+
+        return () => { // added this cleanup func to stop audio when navigating away from a page with music
+          Howler.stop();
+        }
     }, [track])
 
     //toggle to play and pause the music
@@ -78,20 +84,20 @@ export default function Track({
                 (<CgPlayPause size={23}/>) :
                 (<CgPlayButtonR size={23}/>) }  
               </button>
-              <img
+              {/* <img
                 src={track.imageUrl}
                 alt={track.title + "artwork"}
                 className="h-20 w-20"
-              />
+              /> */}
             </div>
             <div className="col-span-12 grid grid-flow-col items-center ">
               <div className="row-span-5 flex flex-row items-center justify-center">
                 <span>{track.title}</span>
-                <span className="px-1">-</span>
-                <span>{track.artist}</span>
+                {/* <span className="px-1">-</span>
+                <span>{track.artist}</span> */}
               </div>
             </div>
-            <div className="flex m-auto justify-end">
+            <div className="flex m-auto justify-end px-4">
               <p className="">{track.duration}</p>
             </div>
           </div>
