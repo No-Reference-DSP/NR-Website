@@ -16,7 +16,7 @@ import CATHARSIS from '@/public/catharsis.png'
 const MusicInstances = [
   {
     id: "t1",
-    src: "/songs/Catharsis/1. marathon_mastertrack.wav",
+    src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/Catharsis/1.+marathon_mastertrack.wav",
     title: "Marathon",
     artist: "No Reference",
     album: "Catharsis I",
@@ -25,7 +25,7 @@ const MusicInstances = [
   },
   {
     id: "t2",
-    src: "/songs/Catharsis/2. mrRedeye_mastertrack.wav",
+    src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/Catharsis/2.+mrRedeye_mastertrack.wav",
     title: "Mr. Redeye",
     artist: "No Reference",
     album: "Catharsis I",
@@ -34,7 +34,7 @@ const MusicInstances = [
   },
   {
     id: "t3",
-    src: "/songs/Catharsis/3. interlude_mastertrack.wav",
+    src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/Catharsis/3.+interlude_mastertrack.wav",
     title: "Interlude",
     artist: "No Reference",
     album: "Catharsis I",
@@ -43,7 +43,7 @@ const MusicInstances = [
   },
   {
     id: "t4",
-    src: "/songs/Catharsis/4. haunted_mastertrack.wav",
+    src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/Catharsis/4.+haunted_mastertrack.wav",
     title: "Haunted",
     artist: "No Reference",
     album: "Catharsis I",
@@ -52,7 +52,7 @@ const MusicInstances = [
   },
   {
     id: "t5",
-    src: "/songs/Catharsis/5. OpenKingsPawn_mastertrack.wav",
+    src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/Catharsis/5.+OpenKingsPawn_mastertrack.wav",
     title: "OpenKingsPawn",
     artist: "No Reference",
     album: "Catharsis I",
@@ -61,7 +61,7 @@ const MusicInstances = [
   },
   {
     id: "t6",
-    src: "/songs/Catharsis/6. fka_eid_mastertrack.wav",
+    src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/Catharsis/6.+fka_eid_mastertrack.wav",
     title: "Fka Eid",
     artist: "No Reference",
     album: "Catharsis I",

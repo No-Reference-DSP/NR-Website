@@ -48,6 +48,7 @@ export default function Track({
             autoplay:false,
             loop:true,
             format:'wav',
+            html5:true,
         })
         // setting new music 
         setMusic(newMusic)

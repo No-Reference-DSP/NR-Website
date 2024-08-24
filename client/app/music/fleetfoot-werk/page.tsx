@@ -16,7 +16,7 @@ import FLEETFOOTWERK from '@/public/fleetfootwerk_single.png'
 const MusicInstances = [
     {
         id: "t1",
-        src: "/songs/singles/No Reference - Fleetfoot Werk.wav",
+        src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/singles/No+Reference+-+Fleetfoot+Werk.wav",
         title: "Fleetfoot Werk",
         artist: "No Reference",
         album: "Single",

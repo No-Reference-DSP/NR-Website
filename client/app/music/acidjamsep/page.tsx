@@ -12,11 +12,11 @@ import AudioPlayer from '@/app/components/AudioPlayer'
 import Track from '@/app/components/Track';
 import { CgChevronLeft, CgPlayButtonR, CgPlayPause } from 'react-icons/cg'
 import ACIDJAMS from '@/public/acidjamsEP.png'
-
+// src: "/songs/AcidJamsEP/Acid Jam 101_master_final.wav"
 const MusicInstances = [
     {
         id: "t1",
-        src: "/songs/AcidJamsEP/Acid Jam 101_master_final.wav",
+        src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/AcidJamsEP/Acid+Jam+101_master_final.wav",
         title: "Acid Jam 101",
         artist: "No Reference",
         album: "Acid Jams EP",
@@ -25,7 +25,7 @@ const MusicInstances = [
     },
     {
         id: "t2",
-        src: "/songs/AcidJamsEP/Acid Jam 102_Masterfile_final.wav",
+        src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/AcidJamsEP/Acid+Jam+102_Masterfile_final.wav",
         title: "Acid Jams 102",
         artist: "No Reference",
         album: "Acid Jams EP",

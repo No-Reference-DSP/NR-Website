@@ -17,7 +17,7 @@ import BEPRETTYROT from '@/public/bp&r.jpg'
 const MusicInstances = [
     {
         id: "t1",
-        src: "/songs/singles/No Reference - Be Pretty & Rot.wav",
+        src: "https://noreference-music-bucket.s3.us-east-2.amazonaws.com/songs/singles/No+Reference+-+Be+Pretty+%26+Rot.wav",
         title: "Be Pretty & Rot",
         artist: "No Reference",
         album: "Single",
