@@ -58,7 +58,7 @@ function MBRPage() {
                 <tr>
                   <th className='border border-slate-200 py-2'>OS</th>
                   <th className='border border-slate-200 '>Format</th>
-                  <th className='border border-slate-200'></th>
+                  <th className='border border-slate-200'> Download </th>
                 </tr>
               </thead>
               <tbody>

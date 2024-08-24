@@ -12,7 +12,8 @@ import AudioPlayer from '@/app/components/AudioPlayer'
 import Track from '@/app/components/Track';
 import { CgChevronLeft, CgPlayButtonR, CgPlayPause } from 'react-icons/cg'
 import BEPRETTYROT from '@/public/bp&r.jpg'
-
+// src: "/songs/singles/No Reference - Be Pretty & Rot.wav" <- replace in src when done with testing
+// use -  src: "http://localhost:8080/api/song/feeling_me_feeling_u"  -  for testing backend
 const MusicInstances = [
     {
         id: "t1",

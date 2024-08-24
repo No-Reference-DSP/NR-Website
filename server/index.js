@@ -1,3 +1,6 @@
+// https://gist.github.com/DingGGu/8144a2b96075deaf1bac
+// going to make modifications for .wav and .mp3 files
+// Thank you to DingGGu for this resource
 const express = require("express");
 const app = express();
 const PORT = 8080;
@@ -15,6 +18,7 @@ app.get('/api/song/:key', function(req,res) {
     var key = req.params.key;
 
     var music = 'music/' + key + '.mp3';
+    console.log("requested: " + music)
 
     var stat = fs.statSync(music);
     range = req.headers.range;
@@ -43,7 +47,7 @@ app.get('/api/song/:key', function(req,res) {
         readStream = fs.createReadStream(music, {start: start, end: end});
     } else {
         res.header({
-            'Content-Type': 'audio/mpeg',
+            'Content-Type': 'audio/mp3',
             'Content-Length': stat.size
         });
         readStream = fs.createReadStream(music);

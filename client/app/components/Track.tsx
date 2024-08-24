@@ -42,10 +42,12 @@ export default function Track({
 
     // using howler to set the music and hold it in Music state
     useEffect(() => { // "useEffect is a React Hook that lets you sychronize a component with an external system"
+        //console.log(track.src)
         const newMusic = new Howl({
             src:[track.src],
             autoplay:false,
             loop:true,
+            format:'wav',
         })
         // setting new music 
         setMusic(newMusic)

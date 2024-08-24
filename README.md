@@ -29,6 +29,7 @@ inside of /client
 10. run `npm install react-icons --save`
 
 11. run `npm install --save @types/react-howler` ?? This is a maybe
-12. run `npm install --save @types/howler
+12. run `npm install --save @types/howler`
+12. run `npm install react-icons --save` for react icons
 
 (I think the backend dependencies got pushed to the repo, so you might just be able to hit step 5 and step 7)

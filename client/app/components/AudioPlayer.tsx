@@ -27,7 +27,6 @@ function AudioPlayer({
   const [currentTime, setCurrentTime] = useState<any>()
 
   function togglePlay() {
-    console.log('togglePlay()')
     if(!selectedMusic) return 
 
     if(isPlaying) {
@@ -47,7 +46,6 @@ function AudioPlayer({
   // if resets the range button to the beginning when the music is changed NOT the current but the actual Music
   // and commit the action if the music exist in state
   useEffect(() => {
-    console.log("TEST")
     setCurrentTime(0)
     if(selectedMusic) selectedMusic.seek(0)
   }, [selectedMusic])
