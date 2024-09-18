@@ -1,7 +1,15 @@
 import Navbar from './ui/navbar'
 import Footer from './ui/footer'
 import './globals.css'
+import { Viewport } from 'next'
 
+// viewport test
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1, 
+  userScalable: true
+}
 
 export const metadata = {
   title: 'No Reference',
