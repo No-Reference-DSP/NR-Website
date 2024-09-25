@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Navbar from './ui/navbar'
 import Image from 'next/image'
 import MBR_DELAY_PNG from '@/public/MBR-Delay.png'
 
