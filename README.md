@@ -31,5 +31,12 @@ inside of /client
 11. run `npm install --save @types/react-howler` ?? This is a maybe
 12. run `npm install --save @types/howler`
 12. run `npm install react-icons --save` for react icons
+13. run `npm install @headlessui/react` for dropdown menu integration
 
 (I think the backend dependencies got pushed to the repo, so you might just be able to hit step 5 and step 7)
+
+# Patch Notes 
+## 1.01
+ - Changed Breakpoints for visibility on mobile verison
+ - Added loading animations for Webpages and Songs on Music Pages
+ -  

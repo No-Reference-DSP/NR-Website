@@ -7,7 +7,7 @@ import GITHUB_LOGO from '@/public/github-mark.png'
 function MBRPage() {
   return (
     <div className='flex flex-col justify-center max-w-[1000px] m-auto'>
-      <div className='flex justify-center mx-10 my-10 bg-slate-500'>
+      <div className='m-3 md:m-10 bg-slate-500 flex justify-center'>
         <Image
           src={MBR_DELAY_PNG}
           alt="MBR-Delay"
@@ -18,9 +18,9 @@ function MBRPage() {
         />
       </div>
 
-      <div className='flex flex-col divide-y-2 divide-dashed divide-y m-auto px-10'>
-        <div className='flex justify-between mb-4 max-w-[1000px]'>
-          <h1 className='font-bold text-3xl'>MBR-DELAY</h1>
+      <div className='flex flex-col divide-y-2 divide-dashed divide-y m-auto px-3 md:px-10'>
+        <div className='flex md:justify-between mb-4 max-w-[1000px]'>
+          <h1 className='font-bold md:text-3xl'>MBR-DELAY</h1>
         </div>
 
         <div className='px-3 py-4 bg-slate-100'>
@@ -37,7 +37,7 @@ function MBRPage() {
           </p>
         </div>
 
-        <div className='py-4 flex justify-between'>
+        <div className='py-4 flex flex-col justify-between'>
           <div className='max-w-sm mx-4 px-2 py-2'>
             <h1 className='font-semibold'>Features</h1>
             <ul className='list-disc pl-4'>
@@ -95,6 +95,8 @@ function MBRPage() {
               </tbody>
             </table>
           </div>
+
+
         </div>
 
         <div className='px-4 py-4'>
@@ -110,10 +112,7 @@ function MBRPage() {
 
           </div>
         </div>
-
       </div>
-
-
 
     </div>
   )

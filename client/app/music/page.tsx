@@ -13,7 +13,7 @@ function Music() {
             Music Catalog
           </h1>
         </div>
-        <div></div>
+       
 
         <div id='musicProjects' className='w-[800px] py-6 px-6'>
           <div id='titleplaceholder' className='py-2'>
