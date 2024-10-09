@@ -4,10 +4,25 @@ import Link from 'next/link'
 import ACIDJAMS from '@/public/acidjamsEP.png'
 import FLEETFOOT from '@/public/fleetfootwerk_single.png'
 import BPROT from '@/public/bp&r.jpg'
+import IHTI from '@/public/ihatetheinternet.png'
 
 function EPSingleBox() {
   return (
     <div className='flex justify-start'>
+      <Link href='music/ihatetheinternet'>
+        <div className='px-2 py-2 hover:border border-slate-300'>
+          <Image
+            src={IHTI}
+            alt='IHATETHEINTERNET'
+            width='200'
+            height='200'
+            className='cursor-pointer m-auto border'
+            priority
+          />
+          <p className='text-sm pt-2 m-auto'>I Hate The Internet</p>
+        </div>
+      </Link>
+
       <Link href='music/acidjamsep'>
         <div className='px-2 py-2 hover:border border-slate-300'>
           <Image
